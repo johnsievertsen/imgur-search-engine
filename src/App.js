@@ -1,6 +1,8 @@
 import './App.css';
 import { useState } from 'react';
 import * as React from 'react';
+import { Gallery } from './components/Gallery'
+import { SearchForm } from './components/SearchForm';
 
 const App = () => {
   const CLIENT_ID = '03e23814bc615ef';
@@ -48,55 +50,6 @@ const App = () => {
       <Gallery gallery={images ? images : []} />
     </div>
   );
-}
-
-const Gallery = ({ gallery }) => {
-  const itemComp = Object.values(gallery).map(image => {
-    return (
-      <Item
-        key={image.id}
-        image={image}
-      />
-    )
-  })
-  return (
-    <ul>
-      {itemComp}
-    </ul >
-  );
-}
-
-
-const Item = ({ image }) => {
-  return (
-    <span>
-      <hr className="item-sep" />
-      <a target='_blank' href={image.link}>
-        <img src={image.nsfw ? null : (
-          image.is_album ? image.images[0].link : image.link
-        )
-        } label={image.title} />
-        <p style={{ fontSize: '12px' }}>{image.title}</p>
-      </a>
-      <p>Uploaded By: {image.account_url}</p>
-      <p>NSFW: {image.nsfw ? 'YES' : 'NO'}</p>
-      <p>Views: {image.views}, Ups: {image.ups}, Comments: {image.comment_count}</p>
-    </span>
-  )
-}
-
-const SearchForm = ({ searchTerm, onSearchChange, onSearchSubmit, onSearchParamChange, searchParam }) => {
-  return (
-    <form onSubmit={onSearchSubmit}>
-      <input type="text" value={searchTerm} onChange={onSearchChange} placeholder="Search"></input>
-      <button>Submit</button>
-      <select onChange={onSearchParamChange} value={searchParam}>Search by:
-        <option value='time'>time</option>
-        <option value='viral'>viral</option>
-        <option value='top'>top</option>
-      </select>
-    </form>
-  )
 }
 
 export default App;
