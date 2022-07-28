@@ -9,9 +9,9 @@ export const Gallery = ({ gallery }) => {
                 image={image}
             />
         )
-    })
+    });
     return (
-        <ul>
+        <ul className="item-container">
             {itemComp}
         </ul >
     );

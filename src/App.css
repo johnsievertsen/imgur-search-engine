@@ -1,50 +1,65 @@
 .App {
+  height: 100vw;
+  padding: 20px;
   text-align: center;
+  color: #171212;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video-react {
+  padding-top: 10px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pageSelector {
+  width: 100%;
 }
 
-img {
-  max-width: 800px;
-  max-height: 800px;
+.title {
+  color: #242121;
+  border: 1px solid #171212;
+  padding: 3px;
 }
 
 .item-sep {
-  border: 1px solid gray;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  color: black;
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item-container {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  max-width: 400;
+  max-height: 650px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+video {
+  max-width: 400px;
+  max-height: 650px;
+  margin-right: 10px;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  background: transparent;
+  border: 1px solid #171212;
+  padding: 3px;
+  cursor: pointer;
+  margin-top: 5px;
+
+  transition: all 0.1s ease-in;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #171212;
+  background-color: transparent;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background: #2c2929;
+  border: 1px solid #171212;
+  color: #ffffff;
 }
