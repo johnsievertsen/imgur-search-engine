@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d1dc0e9.css",
-    "main.js": "/static/js/main.709e57cc.js",
-    "index.html": "/index.html",
-    "main.0d1dc0e9.css.map": "/static/css/main.0d1dc0e9.css.map",
-    "main.709e57cc.js.map": "/static/js/main.709e57cc.js.map"
+    "main.css": "/imgur-search-engine/static/css/main.1d1489ae.css",
+    "main.js": "/imgur-search-engine/static/js/main.efcf7cfb.js",
+    "index.html": "/imgur-search-engine/index.html",
+    "main.1d1489ae.css.map": "/imgur-search-engine/static/css/main.1d1489ae.css.map",
+    "main.efcf7cfb.js.map": "/imgur-search-engine/static/js/main.efcf7cfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d1dc0e9.css",
-    "static/js/main.709e57cc.js"
+    "static/css/main.1d1489ae.css",
+    "static/js/main.efcf7cfb.js"
   ]
 }
