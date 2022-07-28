@@ -1,15 +1,11 @@
 import React from 'react';
 
-export const SearchForm = ({ searchTerm, onSearchChange, onSearchSubmit, onSearchParamChange, searchParam }) => {
+export const SearchForm = ({ onSearchChange, onSearchSubmit }) => {
     return (
         <form onSubmit={onSearchSubmit}>
-            <input type="text" value={searchTerm} onChange={onSearchChange} placeholder="Search"></input>
-            <button>Submit</button>
-            <select onChange={onSearchParamChange} value={searchParam}>Search by:
-                <option value='time'>time</option>
-                <option value='viral'>viral</option>
-                <option value='top'>top</option>
-            </select>
+            <input className="input" type="text" value={localStorage.getItem('searchTerm')} onChange={onSearchChange} placeholder="Search"></input>
+            <button className="button">Submit</button>
+            <br />
         </form>
     )
 }
